@@ -32,7 +32,7 @@ const Navbar = () => {
       <>
         <div className="mx-auto max-w-7xl px-6 lg:py-4 lg:px-8">
           <div className="relative flex h-20 items-center justify-between">
-            <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
+            <div className="flex flex-1 items-center sm:items-stretch sm:justify-start gap-1">
               {/* LOGO */}
 
               <div className="flex flex-shrink-0 items-center">
@@ -61,7 +61,7 @@ const Navbar = () => {
               {/* LINKS */}
 
               <div className="hidden lg:block m-auto">
-                <div className="flex space-x-4">
+                <div className="flex space-x-0 xl:space-x-4">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}

@@ -15,10 +15,10 @@ const Register = () => {
 
   return (
     <>
-      <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0">
-        <div className="hidden lg:block">
+      <div className="flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0">
+        <div className="block lg:hidden">
           <button
-            className="text-blue text-lg font-medium ml-2 xl:ml-9 py-5 px-8 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue"
+            className="text-blue text-lg font-medium ml-2 py-1.5 px-8 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue"
             onClick={openModal}
           >
             Şemsiye Kirala

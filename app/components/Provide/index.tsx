@@ -47,8 +47,8 @@ const Provide = () => {
               </p>
               <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
                 Kubbella, yağmurlu ve güneşli günlerde sizi korumak için
-                buradadır. İster aniden bastıran bir yağmur, ister kavurucu bir
-                güneş olsun, Kubbella ile her zaman güvendesiniz.
+                hizmetinizdedir. İster aniden bastıran bir yağmur, ister
+                kavurucu bir güneş olsun, Kubbella ile her zaman güvendesiniz.
                 Şemsiyelerinizi uygun noktalardan kolayca kiralayabilir, hava
                 koşullarına karşı hazırlıklı olabilirsiniz. Kubbella ile her
                 gününüz konforlu geçsin!

@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Signdialog from "./SigndialogMobile";
+import Registerdialog from "./RegisterdialogMobile";
 
 interface NavigationItem {
   name: string;
@@ -40,16 +42,8 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-4"></div>
-            <button className="bg-white w-full text-blue border border-lightblue font-medium py-2 px-4 rounded">
-              Sponsor Ol
-            </button>
-            <button className="bg-lightblue w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded">
-              Şemsiye Kirala
-            </button>
-
-            {/* <Signdialog />
-
-<Registerdialog /> */}
+            <Signdialog />
+            <Registerdialog />
           </div>
         </div>
       </div>

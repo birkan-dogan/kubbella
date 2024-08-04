@@ -44,8 +44,10 @@ const Why = () => {
               Neden Kubbella?
             </h3>
             <h4 className="text-lg pt-4 font-normal sm:leading-tight text-center text-beach lg:text-start">
-              Dont waste time on search manual tasks. Let Automation do it for
-              you. Simplify workflows, reduce errors, and save time.
+              Kubbella; geniş ürün yelpazesiyle şehir yaşamını kolaylaştıran,
+              çevreci, ekonomik ve kullanıcı odaklı bir uygulamadır. Hava
+              koşullarına karşı her zaman hazırlıklı olmanızı sağlar ve
+              sürdürülebilir bir geleceğe katkıda bulunur.
             </h4>
 
             <div className="mt-10">

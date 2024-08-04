@@ -1,8 +1,9 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { LockClosedIcon } from "@heroicons/react/20/solid";
+import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
 
-const Register = () => {
+const Signin = () => {
   let [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => {
@@ -14,14 +15,15 @@ const Register = () => {
   };
 
   return (
-    <>
-      <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0">
-        <div className="hidden lg:block">
+    <div className="relative">
+      <div className="flex items-center sm:static sm:inset-auto sm:pr-0">
+        <div className="block lg:hidden px-2 mt-4 mb-2">
           <button
-            className="text-blue text-lg font-medium ml-2 xl:ml-9 py-5 px-8 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue"
+            type="button"
+            className="text-lg text-blue font-medium"
             onClick={openModal}
           >
-            Şemsiye Kirala
+            Sponsor Ol
           </button>
         </div>
       </div>
@@ -65,7 +67,8 @@ const Register = () => {
                           </div>
                         </div>
                         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-                          Hesap Oluşturun
+                          Sponsor Olun ve Türkiye'nin Dört Bir Yanında
+                          Reklamınız Olsun
                         </h2>
                       </div>
                       <form className="mt-8 space-y-6" action="#" method="POST">
@@ -90,50 +93,32 @@ const Register = () => {
                             />
                           </div>
                           <div>
-                            <label htmlFor="password" className="sr-only">
-                              Şifre
+                            <label htmlFor="text" className="sr-only">
+                              Marka Adı
                             </label>
                             <input
-                              id="password"
-                              name="password"
-                              type="password"
-                              autoComplete="current-password"
+                              id="text"
+                              name="text"
+                              type="text"
                               required
                               className="relative block w-full appearance-none rounded-none rounded-b-md border border-grey500 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                              placeholder="Şifre"
+                              placeholder="Marka Adı"
                             />
-                          </div>
-                        </div>
-
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center">
-                            <input
-                              id="remember-me"
-                              name="remember-me"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                            <label
-                              htmlFor="remember-me"
-                              className="ml-2 block text-sm text-gray-900"
-                            >
-                              Beni Hatırla
-                            </label>
                           </div>
                         </div>
 
                         <div>
                           <button
                             type="submit"
-                            className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue py-2 px-4 text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                            className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                           >
                             <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                              <LockClosedIcon
+                              <PaperAirplaneIcon
                                 className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
                                 aria-hidden="true"
                               />
                             </span>
-                            Kayıt Ol
+                            Gönder
                           </button>
                         </div>
                       </form>
@@ -143,7 +128,7 @@ const Register = () => {
                   <div className="mt-4 flex justify-end">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 "
+                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
                     >
                       Anladım, Teşekkür Ederim!
@@ -155,8 +140,8 @@ const Register = () => {
           </div>
         </Dialog>
       </Transition>
-    </>
+    </div>
   );
 };
 
-export default Register;
+export default Signin;
