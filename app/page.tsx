@@ -1,5 +1,5 @@
 import Banner from "./components/Banner/Banner";
-import Companies from "./components/Companies/Companies";
+// import Companies from "./components/Companies/Companies";
 import Buyers from "./components/Buyers/index";
 import Provide from "./components/Provide/index";
 import Why from "./components/Why/index";
@@ -15,7 +15,7 @@ export default function Home() {
       <Buyers />
       <Why />
       <Network />
-      <Companies />
+      {/* <Companies /> */}
       <Clientsay />
       <Newsletter />
     </main>

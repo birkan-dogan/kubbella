@@ -67,7 +67,7 @@ const Signin = () => {
                           </div>
                         </div>
                         <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-                          Sponsor Olun ve Türkiye'nin Dört Bir Yanında
+                          Sponsor Olun ve Türkiye`nin Dört Bir Yanında
                           Reklamınız Olsun
                         </h2>
                       </div>
